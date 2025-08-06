@@ -72,7 +72,7 @@ class BankAccount {
 ```java
 public class BankApp {
     public static void main(String[] args) {
-        BankAccount user1 = new BankAccount("Thabo", AccountType.SAVINGS);
+        BankAccount user1 = new BankAccount("Denzyl", AccountType.SAVINGS);
         user1.displayDetails();
 
         switch (user1.accountType) {
