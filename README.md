@@ -46,9 +46,10 @@ By completing this task, you’ll be able to:
 enum AccountType {
     SAVINGS, CURRENT, FIXED_DEPOSIT
 }
----
+```
 
 ### 🔹 Step 2: Create the BankAccount Class
+
 ```java
 
 class BankAccount {
@@ -65,4 +66,34 @@ class BankAccount {
         System.out.println("Account Type: " + accountType.name());
     }
 }
+```
+### 🔹 Step 3: Create the Main Program
+
+```java
+public class BankApp {
+    public static void main(String[] args) {
+        BankAccount user1 = new BankAccount("Thabo", AccountType.SAVINGS);
+        user1.displayDetails();
+
+        switch (user1.accountType) {
+            case SAVINGS:
+                System.out.println("Interest is applied monthly.");
+                break;
+            case CURRENT:
+                System.out.println("Free cheque book included.");
+                break;
+            case FIXED_DEPOSIT:
+                System.out.println("Withdrawal only after maturity.");
+                break;
+        }
+
+        System.out.println("\n Available Account Types:");
+        for (AccountType type : AccountType.values()) {
+            System.out.println("- " + type.name() + " (Index: " + type.ordinal() + ")");
+        }
+    }
+}
+
+
+```
 
