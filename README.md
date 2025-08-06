@@ -12,7 +12,7 @@ In this activity, you'll build a **bank account registration system** using the 
 
 ---
 
-## 🌍 Real-World Scenario
+## Scenario
 
 You're developing a system for a **bank** where users can open different types of accounts. The system must only allow predefined account types:
 
