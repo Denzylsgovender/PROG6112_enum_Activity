@@ -10,6 +10,7 @@ In this activity, you'll build a **bank account registration system** using the 
 ✅ Apply enum methods
 ✅ Add descriptions to enum constants (Bonus)
 
+
 ---
 
 ## Scenario
